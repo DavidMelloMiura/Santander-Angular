@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdfdfd;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 39px;
+    color: chocolate;
+    font-size: 2em;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 0.6;
+}
+
+
+
+.voltar {
+    display: flex;  
+    margin-bottom: 10px;
+    align-self: center;
+    
+  }

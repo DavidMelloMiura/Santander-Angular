@@ -1,0 +1,91 @@
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdfdfd;
+}
+
+.caixa {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    border: 1.5px solid chocolate;
+    border-radius: 20px;
+    width: 40vw;
+    height: 70vh;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 39px;
+    color: chocolate;
+    font-size: 2em;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+}
+
+/*
+input {
+    background-color: white;
+    width: 50%;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    border: 1.5px solid #bebebe;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+*/
+.bt {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 25px;
+    background-color: #f5994e;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3em;
+}
+
+.bt:hover{
+    background-color: #f73a3a;
+}
+
+.voltar {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .form-field{
+      min-width: 150px;
+      max-width: 500px;
+      width: 60%;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .caixa {
+      width: 90vw;
+      height: 95vh;
+    }
+
+    input {
+      width: 90%;
+      height: 28px;
+      font-size: 1.5em;
+    }
+  }

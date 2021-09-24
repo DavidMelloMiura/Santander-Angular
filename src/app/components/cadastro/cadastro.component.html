@@ -1,0 +1,16 @@
+<main class="main">
+    <section>
+        <div class="caixa">
+            <h2>Cadastrar</h2>
+            <input type="text" placeholder="Nome" ngModel="colaborador.nome">
+            <input type="text" placeholder="Sobrenome">
+            <input type="text" placeholder="Cargo">
+            <input type="text" placeholder="Data de Nascimento">
+            <input type="text" placeholder="Endereço">
+
+            <button mat-button class="bt" (click)="createColaborador()">Cadastrar</button>
+            <button mat-stroked-button color="warn" class="voltar" routerLink="">Voltar</button>
+
+        </div>
+    </section>
+</main>
