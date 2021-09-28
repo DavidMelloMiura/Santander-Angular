@@ -17,6 +17,7 @@ h2 {
 .conteudo {
     display: flex;
     flex-direction: column;
+    width: 60vw;
 }
 
 p{
@@ -25,10 +26,33 @@ p{
 }
 
 
-
 .voltar {
-    display: flex;  
+    display: flex;
     margin-bottom: 10px;
     align-self: center;
-    
+
+  }
+
+  li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+  hr {
+    width: auto;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .conteudo {
+      width: 95vw;
+  }
+
+    hr {
+      display: flex;
+      width: 80vw;
+
+    }
+
   }

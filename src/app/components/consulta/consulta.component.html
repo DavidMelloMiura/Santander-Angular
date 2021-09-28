@@ -6,7 +6,7 @@
 
                 <mat-form-field class="form-field" appearance="outline">
                     <mat-label>Nome</mat-label>
-                    <input matInput type="text">
+                    <input matInput type="text" [(ngModel)]='nome'>
                   </mat-form-field>
 
                   <mat-form-field class="form-field" appearance="outline">
@@ -14,11 +14,22 @@
                     <input matInput type="text">
                   </mat-form-field>
 
-
-                
-                <button mat-button class="bt">Consultar</button>
+                <button mat-button class="bt" (click)="consulta()">Consultar</button>
                 <button mat-stroked-button color="warn" class="voltar" routerLink="">Voltar</button>
             </form>
         </div>
     </section>
+
+   
+
+<!--     <section class="resultados">
+      <div class="caixa">
+        <h2>Resultados</h2>
+        <ul>
+          <li>Nome:</li>
+
+        </ul>
+      </div>
+    </section> -->
+
 </main>

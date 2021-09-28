@@ -1,6 +1,8 @@
 import { ColaboradorService } from './colaborador.service';
 import { Colaborador } from './colaborador.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-colaboradores',
@@ -10,27 +12,16 @@ import { Component, OnInit } from '@angular/core';
 
 export class ColaboradoresComponent implements OnInit {
 
-  /*
-  colaborador: Colaborador = {
-    nome: 'David',
-    sobrenome: 'Miura',
-    cargo:'Desenvolvedor FullStack',
-    dataNascimento: '26/10/1981',
-    endereco: 'Narnia'
-  }
-*/
-  
-  constructor() { }
+  colaborador: Colaborador[] = [];
+
+  constructor(private serviceGet: ColaboradorService) { }
 
   ngOnInit(): void {
+    this.serviceGet.lista().subscribe(console.log);
+    this.serviceGet.lista().subscribe(dados => this.colaborador = dados);
+
+
+
   }
 
-  /*
-  createColaborador(): void{
-    this.colaboradorService.create(this.colaborador).subscribe(() => {
-      this.colaboradorService.showMessage('Colaborador Criaddo com sucesso')
-
-    })
-  }
-  */
 }

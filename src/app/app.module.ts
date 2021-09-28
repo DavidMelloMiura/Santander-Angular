@@ -1,3 +1,4 @@
+import { FilterPipe } from './Pipes/filter.pipe';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,6 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ColaboradorItemComponent } from './components/colaboradores/colaborador-item/colaborador-item.component';
 
 
 
@@ -24,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     CadastroComponent,
     ConsultaComponent,
     ColaboradoresComponent,
-    
+    ColaboradorItemComponent,
+    FilterPipe
+
   ],
   imports: [
     BrowserModule,
@@ -33,8 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatIconModule,
     MatInputModule,
-    HttpClientModule
-  
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

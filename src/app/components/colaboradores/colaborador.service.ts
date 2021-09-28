@@ -21,6 +21,10 @@ export class ColaboradorService {
     console.log(msg)
   }
 
+  lista() {
+    return this.http.get<Colaborador[]>(this.baseUrl);
+  }
+
 
 
 }

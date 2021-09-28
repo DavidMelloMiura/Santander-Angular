@@ -2,10 +2,29 @@
     <h2>Colaboradores</h2>
 
     <section class="conteudo">
-        <p>Nome: David Miura</p>
-        <p>Cargo: Desenvolvedor FullStack</p>
-        <p>Data Nascimento: 26/10/1981</p>
-        <p>Endereço: Rua Pirai do Sul, 457 - Vila Flórida CEP: 11111 222 Guarulhos SP</p>
+
+        <!-- <h1>Itens vindo de component colaborador itens aqui lista</h1>
+        <app-colaborador-item></app-colaborador-item> -->
+
+      <ul>
+        <div *ngFor="let colaborador of colaborador">
+          <li style="font-weight: 500;"> <b>Nome:</b> {{ colaborador.nome }} {{ colaborador.sobrenome }} </li>
+          <li> <b>Cargo:</b> {{ colaborador.cargo }} </li>
+          <li> <b>Data de Nascimento:</b> {{ colaborador.dataNascimento }} </li>
+          <li> <b>Endereço:</b> {{ colaborador.endereco }} </li>
+          <hr>
+        </div>
+      </ul>
+
+        <!--
+          <li *ngFor="let curso of cursos"></li>
+        -->
+
+
+
+
+
+
 
         <button mat-stroked-button color="warn" class="voltar" routerLink="">Voltar</button>
 

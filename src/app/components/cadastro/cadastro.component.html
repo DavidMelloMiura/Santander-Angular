@@ -2,12 +2,40 @@
     <section>
         <div class="caixa">
             <h2>Cadastrar</h2>
-            <input type="text" placeholder="Nome" ngModel="colaborador.nome">
-            <input type="text" placeholder="Sobrenome">
-            <input type="text" placeholder="Cargo">
-            <input type="text" placeholder="Data de Nascimento">
-            <input type="text" placeholder="Endereço">
 
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Nome</mat-label>
+              <input matInput type="text" [(ngModel)]="colaborador.nome">
+            </mat-form-field>
+
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Sobrenome</mat-label>
+              <input matInput type="text" [(ngModel)]="colaborador.sobrenome">
+            </mat-form-field>
+
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Cargo</mat-label>
+              <input matInput type="text" [(ngModel)]="colaborador.cargo">
+            </mat-form-field>
+
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Data de Nascimento</mat-label>
+              <input matInput type="text" [(ngModel)]="colaborador.dataNascimento">
+            </mat-form-field>
+
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Endereço</mat-label>
+              <input matInput type="text" [(ngModel)]="colaborador.endereco">
+            </mat-form-field>
+
+
+<!--
+            <input type="text" placeholder="Nome" [(ngModel)]="colaborador.nome">
+            <input type="text" placeholder="Sobrenome"[(ngModel)]="colaborador.sobrenome">
+            <input type="text" placeholder="Cargo"[(ngModel)]="colaborador.cargo">
+            <input type="text" placeholder="Data de Nascimento" [(ngModel)]="colaborador.dataNascimento">
+            <input type="text" placeholder="Endereço" [(ngModel)]="colaborador.endereco">
+-->
             <button mat-button class="bt" (click)="createColaborador()">Cadastrar</button>
             <button mat-stroked-button color="warn" class="voltar" routerLink="">Voltar</button>
 

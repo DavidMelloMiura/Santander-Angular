@@ -25,6 +25,12 @@ h2 {
     font-size: 2em;
 }
 
+li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1em;
+}
+
 .form{
     display: flex;
     align-items: center;
@@ -35,18 +41,8 @@ h2 {
     margin-top: -50px;
 }
 
-/*
-input {
-    background-color: white;
-    width: 50%;
-    height: 37px;
-    border: none;
-    border-radius: 5px;
-    border: 1.5px solid #bebebe;
-    padding-left: 5px;
-    margin-bottom: 15px;
-}
-*/
+
+
 .bt {
     width: 50%;
     height: 50px;

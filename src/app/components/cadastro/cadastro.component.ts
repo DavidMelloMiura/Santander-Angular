@@ -1,11 +1,6 @@
 import { ColaboradorService } from './../colaboradores/colaborador.service';
-
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Output } from '@angular/core';
 import { Colaborador } from '../colaboradores/colaborador.model';
-
-
-
 
 
 @Component({
@@ -15,15 +10,14 @@ import { Colaborador } from '../colaboradores/colaborador.model';
 })
 export class CadastroComponent implements OnInit {
 
+  @Output()
   colaborador: Colaborador = {
-    nome: 'David',
-    sobrenome: 'Miura',
-    cargo:'Desenvolvedor FullStack',
-    dataNascimento: '26/10/1981',
-    endereco: 'Rua sete'
+    nome: '',
+    sobrenome: '',
+    cargo:'',
+    dataNascimento: '',
+    endereco: ''
   }
-
-
 
   constructor(private colaboradorService: ColaboradorService) { }
 
@@ -36,8 +30,6 @@ export class CadastroComponent implements OnInit {
 
     })
   }
-
-
 
 
 }
