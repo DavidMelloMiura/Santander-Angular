@@ -3,8 +3,8 @@
 
     <section class="conteudo">
 
-        <!-- <h1>Itens vindo de component colaborador itens aqui lista</h1>
-        <app-colaborador-item></app-colaborador-item> -->
+      <input type="text" placeholder="Nome" [(ngModel)]="nome" (input)="consulta()"/>
+
 
       <ul>
         <div *ngFor="let colaborador of colaborador">
@@ -16,21 +16,8 @@
         </div>
       </ul>
 
-        <!--
-          <li *ngFor="let curso of cursos"></li>
-        -->
-
-
-
-
-
-
-
         <button mat-stroked-button color="warn" class="voltar" routerLink="">Voltar</button>
 
     </section>
-
-
-
-
+    
 </main>
